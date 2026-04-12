@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto IAS</title> 
+    <link rel="stylesheet" href="/assets/Css/contacto.css">
+</head>
+<body>
+    
+    <main >
+
+         <!--La barra de navegacion-->
+    <nav class="BarraNavegacion2" >
+
+        <a href="index.html">Inicio</a>
+        <a href="sobre-ias.html">Sobre el IAS</a>
+        <a href="servicios.html">Funciones</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+
+        <h2>Contacto</h2>
+
+        <section>
+            <address>
+                Instituto de Asistencia Social (IAS)<br>
+                Av. Principal 123, Formosa, Argentina
+            </address>
+
+            <p><strong>Teléfono:</strong> 3704-38383</p>
+
+            <p>
+                <strong>Email:</strong>
+                <a href="mailto:contacto@iasformosa.gob.ar">contacto@iasformosa.gob.ar</a>
+            </p>
+        </section>
+
+        <form action="#" method="post" id="formulario">
+            
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Escribe tu email " required>
+            
+            <label for="telefono">Teléfono</label>
+            <input type="tel" name="telefono" id="telefono" placeholder="Escribe tu número de teléfono" required>
+            
+            <label for="motivo">Motivo de consulta</label>
+            <select name="motivo" id="motivo">
+                <option value="consulta">Consulta</option>
+                <option value="soporte">Soporte</option>
+                <option value="reclamo">Reclamo</option>
+            </select>
+
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje"></textarea>
+
+            <button type="submit" id="boton">Enviar consulta</button>
+
+        </form>
+
+        <h2>
+            Ubicacion en el mapa
+            
+        </h2>
+        
+        <a href="https://www.bing.com/maps/search?name=Instituto+de+Asistencia+Social&trfc=&mepi=0%7E%7EEmbedded%7ELargeMapLink&FORM=MPSRPL&style=r&q=Instituto+de+Asistencia+Social&ss=id.ypid%3AYN9000x2534261735334827307&ppois=-26.182449340820312_-58.16495132446289_Instituto+de+Asistencia+Social&cp=-26.182381%7E-58.164873&lvl=14.9"><img src="./assets/Img/Captura de pantalla 2026-04-06 100956.png" alt=""></a>
+
+        <details>
+            <summary>Horarios de atención extendidos</summary>
+            <p>
+                Lunes a Viernes: 08:00 a 18:00 hs<br>
+                Sábados: 09:00 a 13:00 hs
+            </p>
+        </details>
+
+    </main>
+
+</body>
+</html>

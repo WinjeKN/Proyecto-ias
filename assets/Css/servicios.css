@@ -1,0 +1,100 @@
+/*
+Archivo: servicios.css
+Proyecto: Sitio Web IAS
+Descripción: Estilo minimalista, con una paleta de colores de un verde fuerte y otro mas ligero #10681b #369448
+*/
+
+
+/* body general con margin 0 y fondo */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eef2f5;
+}
+
+/* header con fondo, color y centrado */
+header {
+    background-color: #10681b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 5px 0 0 0;
+    font-size: 14px;
+}
+
+/* barra de navegacion */
+nav {
+    background-color: #369448;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    background-color: #10681b;
+    color: white;
+}
+
+/* contenido principal */
+main {
+    width: 80%;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+/* headings */
+h2 {
+    color: #10681b;
+}
+
+h3 {
+    color: #369448;
+}
+
+/* parrafos */
+p {
+    line-height: 1.6;
+}
+
+/* listas */
+ul, ol {
+    margin-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* aside con fondo y borde */
+aside {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f2f2f2;
+    border-left: 4px solid #10681b;
+}
+
+/* footer */
+footer {
+    background-color: #10681b;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}

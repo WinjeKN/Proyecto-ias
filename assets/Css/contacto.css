@@ -1,0 +1,118 @@
+/*
+Archivo: contacto.css
+Proyecto: Sitio Web IAS
+Descripción: Estilo minimalista, con una paleta de colores de un verde fuerte y otro mas ligero #10681b #369448
+*/
+
+/* body general con margin 0 y fondo */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eef2f5;
+}
+
+/* main centrado con fondo blanco */
+main {
+    width: 80%;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+/* heading h2 */
+h2 {
+    color: #10681b;
+}
+
+/* direccion / datos de contacto */
+address {
+    font-style: normal;
+    margin-bottom: 10px;
+}
+
+/* enlaces */
+a {
+    color: #369448;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* form y campos */
+#formulario {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input[type="text"],input[type="email"],input[type="tel"], select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+/* boton de envio */
+#boton {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #369448;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #10681b;
+}
+
+/* detalles desplegables */
+details {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-left: 4px solid #369448;
+}
+
+summary {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* nav centrado con enlaces */
+nav {
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 0px 30px;
+    color: #10681b;
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+    padding: 15px 30px;
+    border-radius: 15px;
+}
+
+nav a:hover {
+    background-color: #369448;
+    color: white;
+}

@@ -1,0 +1,52 @@
+#Pot {
+    /*box model */
+    width: 500px;
+    height: 500px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    
+
+    /*Color se aplica en el texto opacity en todo el contenedor*/
+    color: rgb(219, 238, 245);
+    opacity: 1;
+
+    background-color: blueviolet;
+    /*background-image:url("/Proyecto-ias/assets/Img/IAS\ logo.png");*/
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+
+
+   
+}
+
+
+
+
+
+div {
+    
+    /*box model */
+    width: 500px;
+    height: 500px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+  
+    /*Color se aplica en el texto opacity en todo el contenedor*/
+    color: rgb(219, 238, 245);
+    opacity: 1;
+
+    background-color: blueviolet;
+    /*background-image:url("/Proyecto-ias/assets/Img/IAS\ logo.png");*/
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    
+   border-radius: 30px;
+
+}
+

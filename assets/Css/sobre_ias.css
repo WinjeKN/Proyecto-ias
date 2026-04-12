@@ -1,0 +1,95 @@
+/*
+Archivo: sobre_ias.css
+Proyecto: Sitio Web IAS
+Descripción: Estilo minimalista, con una paleta de colores de un verde fuerte y otro mas ligero #10681b #369448
+*/
+
+/* body general con margin 0 y fondo */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eef2f5;
+}
+
+/* main con contenido centrado y blanco */
+main {
+    width: 80%;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+/* secciones con espacio abajo */
+section {
+    margin-bottom: 30px;
+}
+
+/* h2 con color y linea abajo */
+h2 {
+    color: #10681b;
+    border-bottom: 2px solid #369448;
+    padding-bottom: 5px;
+}
+
+/* h3 con color y margen arriba */
+h3 {
+    color: #369448;
+    margin-top: 15px;
+}
+
+/* parrafos con interlineado */
+p {
+    line-height: 1.6;
+}
+
+/* tabla y estilo general */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+/* encabezados de tabla */
+th {
+    background-color: #10681b;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+/* celdas de tabla */
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* filas pares de la tabla con fondo distinto */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* nav centrado */
+nav {
+    text-align: center;
+}
+
+/* enlaces del nav */
+nav a {
+    text-decoration: none;
+    margin: 0px 30px;
+    color: #10681b;
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+    padding: 15px 30px;
+    border-radius: 15px;
+}
+
+/* hover de los enlaces */
+nav a:hover {
+    background-color: #369448;
+    color: white;
+}
