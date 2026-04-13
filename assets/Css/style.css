@@ -257,3 +257,8 @@ nav ul {
 - justify-content: center centra horizontalmente
 - list-style: none quita puntos de lista
 */
+
+
+script{
+    display: none;
+}
