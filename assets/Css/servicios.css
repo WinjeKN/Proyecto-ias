@@ -113,3 +113,17 @@ nav ul {
     justify-content: center;
     list-style: none;
 }
+
+
+section ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px 20px;
+}
+
+
+section ol {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px 20px;
+}
