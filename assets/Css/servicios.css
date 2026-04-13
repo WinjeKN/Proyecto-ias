@@ -98,3 +98,9 @@ footer {
     padding: 15px;
     margin-top: 20px;
 }
+
+
+.container {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+}

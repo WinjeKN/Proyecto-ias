@@ -93,3 +93,8 @@ nav a:hover {
     background-color: #369448;
     color: white;
 }
+
+.container {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+}
