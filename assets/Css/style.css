@@ -1,9 +1,6 @@
-/*
-Archivo: style.css
-Proyecto: Sitio Web IAS
-Descripción: Estilo minimalista, con una paleta de colores de un verde fuerte y otro mas ligero #10681b #369448
+/* RESET GENERAL
+- limpia estilos del navegador
 */
-
 * {
   margin: 0;
   padding: 0;
@@ -11,124 +8,252 @@ Descripción: Estilo minimalista, con una paleta de colores de un verde fuerte y
   display: block;
 }
 
+/* EXPLICACION PROPIEDADES RESET
+- margin: quita espacio de afuera
+- padding: quita espacio de adentro
+- box-sizing: border-box hace que el tamaño incluya padding y borde
+- display: block hace que cada elemento ocupe una linea
+*/
+
+/* HTML
+- define tamaño de la pagina
+*/
 html {
-width: 100vw;
-height: 100vh;
+  width: 100vw;
+  height: 100vh;
 }
 
+/* EXPLICACION PROPIEDADES HTML
+- width: 100vw ocupa todo el ancho de la pantalla
+- height: 100vh ocupa toda la altura de la pantalla
+*/
+
+/* BODY
+- fondo y estructura general
+*/
 body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f6f8;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
 }
 
+/* EXPLICACION PROPIEDADES BODY
+- width: 100% ocupa todo el ancho disponible
+- height: 100% ocupa todo el alto disponible
+- margin: 0 elimina espacios externos
+- font-family define el tipo de letra
+- background-color define el color de fondo
+*/
 
+/* HEADER
+- parte superior de la pagina
+*/
 header {
-    background-color: #10681b;
-    color: white;
-    text-align: center;
-    padding: 20px;
+  background-color: #10681b;
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
 
+/* EXPLICACION PROPIEDADES HEADER
+- background-color cambia el fondo
+- color cambia el texto
+- text-align: center centra el contenido
+- padding agrega espacio interno
+*/
+
+/* HEADER IMG
+- logo o imagen
+*/
 header img {
-    width: 80px;
-    display: block;
-    margin: 0 auto 10px auto;
-    border-radius: 50%;
+  width: 80px;
+  display: block;
+  margin: 0 auto 10px auto;
+  border-radius: 50%;
 }
 
+/* EXPLICACION PROPIEDADES HEADER IMG
+- width define el tamaño de la imagen
+- display: block hace que ocupe toda la linea
+- margin centra la imagen
+- border-radius: 50% la hace redonda
+*/
+
+/* HEADER H1
+- titulo principal
+*/
 header h1 {
-    margin: 5px 0;
-    font-size: 24px;
+  margin: 5px 0;
+  font-size: 24px;
 }
 
+/* EXPLICACION PROPIEDADES H1
+- margin separa arriba y abajo
+- font-size define el tamaño del texto
+*/
+
+/* HEADER H2
+- subtitulo
+*/
 header h2 {
-    margin: 0;
-    font-size: 16px;
-    font-weight: normal;
+  margin: 0;
+  font-size: 16px;
+  font-weight: normal;
 }
 
+/* EXPLICACION PROPIEDADES H2
+- margin: 0 elimina espacios
+- font-size tamaño del texto
+- font-weight: normal quita negrita
+*/
 
+/* BARRA DE NAVEGACION
+- menu principal
+*/
 .BarraNavegacion {
-    background-color: #369448;
-    text-align: center;
-    padding: 10px;
+  background-color: #369448;
+  text-align: center;
+  padding: 10px;
 }
 
+/* EXPLICACION PROPIEDADES BARRA NAV
+- background-color color de fondo
+- text-align centra los elementos
+- padding agrega espacio interno
+*/
+
+/* LINKS
+- estilo de los enlaces
+*/
 .enlance {
-
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-    padding: 8px 12px;
-    border-radius: 4px;
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 8px 12px;
+  border-radius: 4px;
 }
 
+/* EXPLICACION PROPIEDADES LINKS
+- color cambia color del texto
+- text-decoration: none quita subrayado
+- margin separa los links
+- padding agrega espacio interno
+- border-radius redondea bordes
+*/
+
+/* HOVER LINKS
+- efecto al pasar mouse
+*/
 nav a:hover {
-    background-color: #10681b;
+  background-color: #10681b;
 }
 
+/* EXPLICACION PROPIEDADES HOVER
+- background-color cambia color al pasar el mouse
+*/
 
+/* MAIN
+- contenido principal
+*/
 main {
-    width: 100%;
-    margin: 20px auto;
-    background: white;
-    padding: 20px;
-    box-sizing: border-box;
-    border-radius: 6px;
+  width: 100%;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 6px;
 }
 
+/* EXPLICACION PROPIEDADES MAIN
+- width ancho completo
+- margin separacion externa
+- background color de fondo
+- padding espacio interno
+- box-sizing incluye padding en el tamaño
+- border-radius bordes redondeados
+*/
 
+/* PARRAFOS
+- texto del contenido
+*/
 .parrafo {
-    line-height: 1.6;
-    margin-bottom: 15px;
+  line-height: 1.6;
+  margin-bottom: 15px;
 }
 
+/* EXPLICACION PROPIEDADES PARRAFOS
+- line-height espacio entre lineas
+- margin-bottom separa hacia abajo
+*/
+
+/* IMAGENES MAIN
+- contenido visual
+*/
 main img {
-    width: 100%;
-    max-width: 600px;
-    display: block;
-    margin: 20px auto;
-    border-radius: 6px;
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin: 20px auto;
+  border-radius: 6px;
 }
 
+/* EXPLICACION PROPIEDADES IMAGENES
+- width responsivo
+- max-width limite de tamaño
+- display: block ocupa linea completa
+- margin centra la imagen
+- border-radius redondea bordes
+*/
 
+/* FIGURE
+- descripcion de imagen
+*/
 figure {
-    text-align: center;
-    font-size: 14px;
-    color: gray;
+  text-align: center;
+  font-size: 14px;
+  color: gray;
 }
 
+/* EXPLICACION PROPIEDADES FIGURE
+- text-align centra el texto
+- font-size tamaño del texto
+- color cambia color del texto
+*/
 
+/* FOOTER - FLEXBOX
+- organiza elementos en columna
+*/
 footer {
-    background-color: #10681b;
-    color: white;
-    padding: 15px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #10681b;
+  color: white;
+  padding: 15px;
+  width: 100%;
 }
 
+/* EXPLICACION FLEXBOX FOOTER
+- display: flex activa flexbox
+- flex-direction: column pone elementos en columna
+- align-items: center centra horizontalmente
+*/
 
-script{
-    display: none;
-}
-
-
-.container {
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-rows: auto auto 1fr auto;
-}
-
-
+/* MENU - FLEXBOX
+- organiza links en fila
+*/
 nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
 }
+
+/* EXPLICACION FLEXBOX MENU
+- display: flex activa flexbox
+- flex-direction: row pone elementos en fila
+- justify-content: center centra horizontalmente
+- list-style: none quita puntos de lista
+*/

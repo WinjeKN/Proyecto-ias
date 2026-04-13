@@ -5,14 +5,25 @@ Descripción: Estilo minimalista, con una paleta de colores de un verde fuerte y
 */
 
 
-/* body general con margin 0 y fondo */
+/* BODY GENERAL
+- estilo base de toda la pagina
+*/
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #eef2f5;
 }
 
-/* header con fondo, color y centrado */
+/* EXPLICACION BODY
+- margin: 0 quita espacios externos
+- font-family define la letra
+- background-color define el color de fondo
+*/
+
+
+/* HEADER
+- parte de arriba de la pagina
+*/
 header {
     background-color: #10681b;
     color: white;
@@ -20,22 +31,59 @@ header {
     padding: 20px;
 }
 
+/* EXPLICACION HEADER
+- background-color cambia el fondo
+- color cambia el color del texto
+- text-align centra el contenido
+- padding agrega espacio interno
+*/
+
+
+/* HEADER H1
+- titulo principal
+*/
 header h1 {
     margin: 0;
 }
 
+/* EXPLICACION HEADER H1
+- margin: 0 elimina espacios externos
+*/
+
+
+/* HEADER P
+- subtitulo del header
+*/
 header p {
     margin: 5px 0 0 0;
     font-size: 14px;
 }
 
-/* barra de navegacion */
+/* EXPLICACION HEADER P
+- margin ajusta espacios arriba y abajo
+- font-size cambia el tamaño del texto
+*/
+
+
+/* NAV
+- barra de navegacion
+*/
 nav {
     background-color: #369448;
     text-align: center;
     padding: 10px;
 }
 
+/* EXPLICACION NAV
+- background-color color de fondo
+- text-align centra los links
+- padding espacio interno
+*/
+
+
+/* LINKS NAV
+- botones del menu
+*/
 nav a {
     color: white;
     text-decoration: none;
@@ -44,12 +92,32 @@ nav a {
     border-radius: 4px;
 }
 
+/* EXPLICACION NAV A
+- color cambia color del texto
+- text-decoration: none quita subrayado
+- margin separa los links
+- padding espacio interno
+- border-radius bordes redondeados
+*/
+
+
+/* HOVER NAV
+- efecto al pasar el mouse
+*/
 nav a:hover {
     background-color: #10681b;
     color: white;
 }
 
-/* contenido principal */
+/* EXPLICACION HOVER
+- background-color cambia el fondo al pasar mouse
+- color mantiene el texto blanco
+*/
+
+
+/* MAIN
+- contenido principal
+*/
 main {
     width: 80%;
     margin: 20px auto;
@@ -59,30 +127,78 @@ main {
     border-radius: 6px;
 }
 
-/* headings */
+/* EXPLICACION MAIN
+- width define el ancho del contenido
+- margin centra la caja
+- background-color fondo blanco
+- padding espacio interno
+- box-sizing incluye padding en el tamaño
+- border-radius bordes redondeados
+*/
+
+
+/* H2
+- titulos de seccion
+*/
 h2 {
     color: #10681b;
 }
 
+/* EXPLICACION H2
+- color cambia el color del texto
+*/
+
+
+/* H3
+- subtitulos
+*/
 h3 {
     color: #369448;
 }
 
-/* parrafos */
+/* EXPLICACION H3
+- color cambia el color del texto
+*/
+
+
+/* PARRAFOS
+- texto normal
+*/
 p {
     line-height: 1.6;
 }
 
-/* listas */
+/* EXPLICACION P
+- line-height aumenta espacio entre lineas
+*/
+
+
+/* LISTAS UL Y OL
+- listas de contenido
+*/
 ul, ol {
     margin-left: 20px;
 }
 
+/* EXPLICACION LISTAS
+- margin-left separa la lista del borde izquierdo
+*/
+
+
+/* ITEMS DE LISTA
+*/
 li {
     margin-bottom: 10px;
 }
 
-/* aside con fondo y borde */
+/* EXPLICACION LI
+- margin-bottom separa cada elemento de la lista
+*/
+
+
+/* ASIDE
+- bloque lateral de informacion
+*/
 aside {
     margin-top: 20px;
     padding: 15px;
@@ -90,7 +206,17 @@ aside {
     border-left: 4px solid #10681b;
 }
 
-/* footer */
+/* EXPLICACION ASIDE
+- margin-top separa del contenido de arriba
+- padding espacio interno
+- background-color fondo gris
+- border-left linea verde lateral
+*/
+
+
+/* FOOTER
+- pie de pagina
+*/
 footer {
     background-color: #10681b;
     color: white;
@@ -99,14 +225,34 @@ footer {
     margin-top: 20px;
 }
 
+/* EXPLICACION FOOTER
+- background-color color de fondo
+- color color del texto
+- text-align centra el texto
+- padding espacio interno
+- margin-top separa del contenido
+*/
 
+
+/* CONTAINER
+- estructura de pagina
+*/
 .container {
     display: grid;
     grid-template-rows: auto auto 1fr auto;
 }
 
+/* EXPLICACION GRID CONTAINER
+- display: grid activa grid layout
+- grid-template-rows define filas
+- auto ajusta segun contenido
+- 1fr ocupa espacio restante
+*/
 
 
+/* MENU UL
+- lista del menu en fila
+*/
 nav ul {
     display: flex;
     flex-direction: row;
@@ -114,16 +260,41 @@ nav ul {
     list-style: none;
 }
 
+/* EXPLICACION FLEX MENU
+- display: flex activa flexbox
+- flex-direction: row pone en fila
+- justify-content centra horizontalmente
+- list-style: none quita puntos
+*/
 
+
+/* SECCION UL
+- lista en dos columnas
+*/
 section ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0px 20px;
 }
 
+/* EXPLICACION GRID UL
+- display: grid activa grid layout
+- grid-template-columns crea dos columnas
+- gap separa columnas
+*/
 
+
+/* SECCION OL
+- lista numerada en dos columnas
+*/
 section ol {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0px 20px;
 }
+
+/* EXPLICACION GRID OL
+- display: grid activa grid layout
+- grid-template-columns divide en dos columnas
+- gap separa elementos
+*/

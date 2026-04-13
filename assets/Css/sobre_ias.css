@@ -4,14 +4,26 @@ Proyecto: Sitio Web IAS
 Descripción: Estilo minimalista, con una paleta de colores de un verde fuerte y otro mas ligero #10681b #369448
 */
 
-/* body general con margin 0 y fondo */
+
+/* BODY GENERAL
+- estilo base de la pagina
+*/
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #eef2f5;
 }
 
-/* main con contenido centrado y blanco */
+/* EXPLICACION BODY
+- margin: 0 quita espacios externos
+- font-family define la letra
+- background-color define el color de fondo
+*/
+
+
+/* MAIN
+- caja principal centrada del contenido
+*/
 main {
     width: 80%;
     margin: 20px auto;
@@ -21,37 +33,89 @@ main {
     border-radius: 6px;
 }
 
-/* secciones con espacio abajo */
+/* EXPLICACION MAIN
+- width: 80% hace el contenido mas angosto
+- margin: 20px auto centra la caja
+- background-color fondo blanco
+- padding espacio interno
+- box-sizing incluye padding en el tamaño
+- border-radius bordes redondeados
+*/
+
+
+/* SECTION
+- separa bloques de contenido
+*/
 section {
     margin-bottom: 30px;
 }
 
-/* h2 con color y linea abajo */
+/* EXPLICACION SECTION
+- margin-bottom separa secciones entre si
+*/
+
+
+/* H2
+- titulos principales
+*/
 h2 {
     color: #10681b;
     border-bottom: 2px solid #369448;
     padding-bottom: 5px;
 }
 
-/* h3 con color y margen arriba */
+/* EXPLICACION H2
+- color cambia el color del texto
+- border-bottom crea linea debajo del titulo
+- padding-bottom separa el texto de la linea
+*/
+
+
+/* H3
+- subtitulos
+*/
 h3 {
     color: #369448;
     margin-top: 15px;
 }
 
-/* parrafos con interlineado */
+/* EXPLICACION H3
+- color cambia color del texto
+- margin-top separa hacia arriba
+*/
+
+
+/* PARRAFOS
+- texto normal
+*/
 p {
     line-height: 1.6;
 }
 
-/* tabla y estilo general */
+/* EXPLICACION P
+- line-height aumenta espacio entre lineas
+*/
+
+
+/* TABLA
+- estructura de datos
+*/
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 15px;
 }
 
-/* encabezados de tabla */
+/* EXPLICACION TABLE
+- width: 100% ocupa todo el ancho
+- border-collapse junta bordes de la tabla
+- margin-top separa la tabla del contenido superior
+*/
+
+
+/* TH
+- encabezados de tabla
+*/
 th {
     background-color: #10681b;
     color: white;
@@ -59,23 +123,56 @@ th {
     text-align: left;
 }
 
-/* celdas de tabla */
+/* EXPLICACION TH
+- background-color color de fondo
+- color color del texto
+- padding espacio interno
+- text-align alinea texto a la izquierda
+*/
+
+
+/* TD
+- celdas de tabla
+*/
 td {
     padding: 10px;
     border-bottom: 1px solid #ccc;
 }
 
-/* filas pares de la tabla con fondo distinto */
+/* EXPLICACION TD
+- padding espacio interno
+- border-bottom linea debajo de cada celda
+*/
+
+
+/* FILAS PARES
+- estilo alternado de tabla
+*/
 tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 
-/* nav centrado */
+/* EXPLICACION TR EVEN
+- nth-child(even) selecciona filas pares
+- background-color cambia color para alternar filas
+*/
+
+
+/* NAV
+- menu centrado
+*/
 nav {
     text-align: center;
 }
 
-/* enlaces del nav */
+/* EXPLICACION NAV
+- text-align centra el contenido del menu
+*/
+
+
+/* LINKS NAV
+- botones del menu
+*/
 nav a {
     text-decoration: none;
     margin: 0px 30px;
@@ -88,21 +185,62 @@ nav a {
     border-radius: 15px;
 }
 
-/* hover de los enlaces */
+/* EXPLICACION NAV A
+- text-decoration: none quita subrayado
+- margin separa los links
+- color cambia color del texto
+- font-size tamaño del texto
+- font-weight grosor del texto
+- letter-spacing separa letras
+- box-sizing incluye padding en tamaño
+- padding espacio interno
+- border-radius bordes redondeados
+*/
+
+
+/* HOVER NAV
+- efecto al pasar mouse
+*/
 nav a:hover {
     background-color: #369448;
     color: white;
 }
 
+/* EXPLICACION HOVER
+- background-color cambia fondo al pasar mouse
+- color cambia color del texto
+*/
+
+
+/* CONTAINER
+- estructura de pagina
+*/
 .container {
     display: grid;
     grid-template-rows: auto auto 1fr auto;
 }
 
+/* EXPLICACION GRID CONTAINER
+- display: grid activa grid layout
+- grid-template-rows define filas
+- auto ajusta segun contenido
+- 1fr ocupa el espacio restante
+*/
 
+
+/* MENU UL
+- lista del menu en fila
+*/
 nav ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
     list-style: none;
 }
+
+/* EXPLICACION FLEX MENU
+- display: flex activa flexbox
+- flex-direction: row pone elementos en fila
+- justify-content centra horizontalmente
+- list-style: none quita puntos de lista
+*/

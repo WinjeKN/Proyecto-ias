@@ -4,7 +4,10 @@ Proyecto: Sitio Web IAS
 Descripción: Estilo minimalista, con una paleta de colores de un verde fuerte y otro mas ligero #10681b #369448
 */
 
-/* body general con margin 0 y fondo */
+
+/* BODY GENERAL
+- base de toda la pagina
+*/
 body {
     width: 100%;
     height: 100%;
@@ -13,7 +16,18 @@ body {
     background-color: #eef2f5;
 }
 
-/* main centrado con fondo blanco */
+/* EXPLICACION BODY
+- width: 100% ocupa todo el ancho de la pantalla
+- height: 100% ocupa toda la altura
+- margin: 0 elimina espacios externos
+- font-family define la letra
+- background-color define el fondo
+*/
+
+
+/* MAIN
+- caja principal centrada
+*/
 main {
     width: 80%;
     margin: 20px auto;
@@ -23,36 +37,91 @@ main {
     border-radius: 6px;
 }
 
-/* heading h2 */
+/* EXPLICACION MAIN
+- width: 80% hace el contenido mas angosto
+- margin: 20px auto centra la caja
+- background-color fondo blanco
+- padding espacio interno
+- box-sizing incluye padding en el tamaño
+- border-radius bordes redondeados
+*/
+
+
+/* H2
+- titulo principal
+*/
 h2 {
     color: #10681b;
 }
 
-/* direccion / datos de contacto */
+/* EXPLICACION H2
+- color cambia el color del texto
+*/
+
+
+/* ADDRESS
+- datos de contacto
+*/
 address {
     font-style: normal;
     margin-bottom: 10px;
 }
 
-/* enlaces */
+/* EXPLICACION ADDRESS
+- font-style: normal quita cursiva
+- margin-bottom separa hacia abajo
+*/
+
+
+/* LINKS
+- enlaces de la pagina
+*/
 a {
     color: #369448;
     text-decoration: none;
 }
 
+/* EXPLICACION LINKS
+- color cambia el texto
+- text-decoration: none quita subrayado
+*/
+
+
+/* HOVER LINKS
+- efecto al pasar mouse
+*/
 a:hover {
     text-decoration: underline;
 }
 
-/* form y campos */
+/* EXPLICACION HOVER
+- text-decoration: underline agrega subrayado al pasar mouse
+*/
+
+
+/* FORMULARIO
+- estructura del formulario
+*/
 #formulario {
     width: 100%;
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
-    gap:15px;
+    gap: 15px;
 }
 
+/* EXPLICACION FORMULARIO
+- display: flex activa flexbox
+- flex-wrap permite que bajen los elementos si no entran
+- gap separa los elementos
+- width: 100% ocupa todo el ancho
+- margin-top separa del contenido de arriba
+*/
+
+
+/* LABEL
+- texto de cada campo
+*/
 label {
     display: block;
     margin-top: 15px;
@@ -60,23 +129,53 @@ label {
     width: 100%;
 }
 
-input[type="text"],input[type="email"],input[type="tel"], select, textarea {
+/* EXPLICACION LABEL
+- display: block ocupa toda la linea
+- margin-top separa arriba
+- font-weight: bold pone negrita
+- width: 100% ocupa todo el ancho
+*/
+
+
+/* INPUTS Y CAMPOS
+- campos del formulario
+*/
+input[type="text"], input[type="email"], input[type="tel"], select, textarea {
     width: 100%;
     padding: 8px;
     margin-top: 5px;
     box-sizing: border-box;
     border: 1px solid #ccc;
     border-radius: 4px;
-    
 }
 
+/* EXPLICACION CAMPOS
+- width: 100% ocupa todo el ancho
+- padding espacio interno
+- margin-top separa del label
+- box-sizing incluye padding en tamaño
+- border borde gris
+- border-radius bordes redondeados
+*/
+
+
+/* TEXTAREA
+- caja de texto grande
+*/
 textarea {
     height: 100px;
     resize: vertical;
-    width: 100%;
 }
 
-/* boton de envio */
+/* EXPLICACION TEXTAREA
+- height altura de la caja
+- resize: vertical permite cambiar solo altura
+*/
+
+
+/* BOTON
+- boton de envio
+*/
 #boton {
     margin-top: 15px;
     padding: 10px;
@@ -88,11 +187,33 @@ textarea {
     width: 100%;
 }
 
+/* EXPLICACION BOTON
+- margin-top separa del formulario
+- padding espacio interno
+- background-color color del boton
+- color texto blanco
+- border: none quita borde
+- border-radius bordes redondeados
+- cursor cambia cursor a mano
+- width: 100% ocupa todo el ancho
+*/
+
+
+/* BOTON HOVER
+- efecto al pasar mouse
+*/
 button:hover {
     background-color: #10681b;
 }
 
-/* detalles desplegables */
+/* EXPLICACION HOVER BOTON
+- background-color cambia color al pasar mouse
+*/
+
+
+/* DETAILS
+- bloque desplegable
+*/
 details {
     margin-top: 20px;
     padding: 10px;
@@ -100,18 +221,47 @@ details {
     border-left: 4px solid #369448;
 }
 
+/* EXPLICACION DETAILS
+- margin-top separa arriba
+- padding espacio interno
+- background-color fondo gris
+- border-left linea lateral verde
+*/
+
+
+/* SUMMARY
+- titulo del desplegable
+*/
 summary {
     font-weight: bold;
     cursor: pointer;
 }
 
-/* nav centrado con enlaces */
+/* EXPLICACION SUMMARY
+- font-weight: bold texto en negrita
+- cursor: pointer cambia cursor a mano
+*/
+
+
+/* NAV
+- menu centrado
+*/
 nav {
     text-align: center;
     height: 100%;
     width: 100%;
 }
 
+/* EXPLICACION NAV
+- text-align centra contenido
+- height altura completa
+- width ancho completo
+*/
+
+
+/* LINKS NAV
+- botones del menu
+*/
 nav a {
     text-decoration: none;
     margin: 0px 30px;
@@ -124,20 +274,52 @@ nav a {
     border-radius: 15px;
 }
 
+/* EXPLICACION NAV LINKS
+- text-decoration: none quita subrayado
+- margin separa links
+- color texto verde
+- font-size tamaño del texto
+- font-weight grosor del texto
+- letter-spacing separa letras
+- box-sizing incluye padding en tamaño
+- padding espacio interno
+- border-radius bordes redondeados
+*/
+
+
+/* HOVER NAV
+- efecto al pasar mouse
+*/
 nav a:hover {
     background-color: #369448;
     color: white;
 }
 
+/* EXPLICACION HOVER NAV
+- background-color cambia fondo
+- color cambia texto
+*/
 
-.mapImage{
+
+/* MAPA
+- imagen o mapa
+*/
+.mapImage {
     overflow: hidden;
     max-width: 100%;
     height: auto;
 }
 
+/* EXPLICACION MAPA
+- overflow: hidden evita desbordes
+- max-width: 100% evita que se pase del ancho
+- height: auto mantiene proporciones
+*/
 
 
+/* CONTAINER
+- estructura general
+*/
 .container {
     min-height: 100vh;
     width: 100%;
@@ -146,7 +328,18 @@ nav a:hover {
     grid-template-rows: auto auto 1fr auto;
 }
 
+/* EXPLICACION GRID CONTAINER
+- min-height: 100vh ocupa toda la pantalla
+- width: 100% ancho completo
+- height: 100% alto completo
+- display: grid activa grid
+- grid-template-rows organiza filas
+*/
 
+
+/* MENU UL
+- lista del menu
+*/
 nav ul {
     display: flex;
     flex-direction: row;
@@ -154,4 +347,9 @@ nav ul {
     list-style: none;
 }
 
-
+/* EXPLICACION FLEX MENU
+- display: flex activa flexbox
+- flex-direction: row pone en fila
+- justify-content centra horizontalmente
+- list-style: none quita puntos
+*/
